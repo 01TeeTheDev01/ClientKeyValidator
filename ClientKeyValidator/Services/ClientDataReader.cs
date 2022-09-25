@@ -59,7 +59,8 @@
 
                         //check if dob is valid and create new client
                         if (DateTime.TryParse(year + "-" + month + "-" + day, out DateTime validDOB))
-                            data.Add(new Client { FirstName = strippedData[0], MiddleName = strippedData[1], LastName = strippedData[2], DateOfBirth = validDOB });
+                            data.Add(new Client { FirstName = strippedData[0], MiddleName = strippedData[1], LastName = strippedData[2],
+                                DateOfBirth = validDOB });
                         else
                             data.Add(new Client { FirstName = strippedData[0], MiddleName = strippedData[1], LastName = strippedData[2], DateOfBirth = default });
                         break;

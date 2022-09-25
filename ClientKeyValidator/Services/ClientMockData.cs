@@ -15,8 +15,6 @@
                     client.UniqueKey = client.UniqueKey + "-" + (duplicateCount + 1);
 
                     keysList.Add(client);
-
-                    duplicateCount = 0;
                 }
             }
             catch (Exception e)
